@@ -37,7 +37,7 @@ public class OrderCardNegativeTest {
     }
 
     @Test
-    void InvalidNameCharacterTest() {
+    void invalidNameCharacterTest() {
         driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Rimskii-Korsakov Dmitrii");
         driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+79991110011");
         driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
@@ -47,7 +47,7 @@ public class OrderCardNegativeTest {
     }
 
     @Test
-    void NoPhoneTest() {
+    void noPhoneTest() {
         driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Римский-Корсаков Дмитрий");
         driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
         driver.findElement(By.cssSelector("button.button")).click();
@@ -56,7 +56,7 @@ public class OrderCardNegativeTest {
     }
 
     @Test
-    void NoNameTest() {
+    void noNameTest() {
         driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+79991110011");
         driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
         driver.findElement(By.cssSelector("button.button")).click();
@@ -65,7 +65,7 @@ public class OrderCardNegativeTest {
     }
 
     @Test
-    void InvalidPhoneTest() {
+    void invalidPhoneTest() {
         driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Римский-Корсаков Дмитрий");
         driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("9");
         driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
@@ -75,7 +75,7 @@ public class OrderCardNegativeTest {
     }
 
     @Test
-    void NoClickboxTest() {
+    void noClickboxTest() {
         driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Римский-Корсаков Дмитрий");
         driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+79991110011");
         driver.findElement(By.cssSelector("button.button")).click();
