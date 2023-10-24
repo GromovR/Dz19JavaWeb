@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/9ybjrp43xw0r1sq0?svg=true)](https://ci.appveyor.com/project/GromovR/dz19javaweb)
