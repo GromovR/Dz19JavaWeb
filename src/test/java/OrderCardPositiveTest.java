@@ -1,6 +1,4 @@
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -14,11 +12,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class OrderCardPositiveTest {
     private WebDriver driver;
 
-    @BeforeAll
-    public static void setup() {
-        WebDriverManager.chromedriver().setup();
-
-    }
 
     @BeforeEach
     public void beforeEach() {
